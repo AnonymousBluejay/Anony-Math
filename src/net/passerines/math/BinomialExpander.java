@@ -36,7 +36,7 @@ public class BinomialExpander {
 				expansion += "x^" + (n-i) + "y^" + i + "";
 			}
 		}
-		expansion = Formatter.superscript(expansion);
+		//expansion = Formatter.superscript(expansion); //Some superscript just don't display right in the console
 		return expansion;
 	}
 	
