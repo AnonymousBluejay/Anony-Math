@@ -23,13 +23,14 @@ public class MathTester {
 		System.out.println(z0);
 		System.out.println(yeeet);*/
 		
+		//Find the constant terms
 		//Exercise 7C a) Answer: 96096
 		Binomial a = new Binomial(1.0, "x", 1.0, 2.0, "x", -2.0, 15);
 		System.out.println("Expanding: " + a);
 		System.out.println(BinomialExpander.expand(a));
 		
 		//Exercise 7C b) Answer: -2268
-		Binomial b = new Binomial(1.0, "x", 1.0, 3.0, "x", -2.0, 9);
+		Binomial b = new Binomial(1.0, "x", 1.0, -3.0, "x", -2.0, 9);
 		System.out.println("Expanding: " + b);
 		System.out.println(BinomialExpander.expand(b));
 	}
