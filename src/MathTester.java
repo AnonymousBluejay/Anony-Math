@@ -15,13 +15,23 @@ public class MathTester {
 			System.out.println("(x+y)^" + i + " is " + BinomialExpander.getSimpleExpansion(1, 1, i));
 		}*/
 		
-		Variable x3 = new Variable("x", 3);
+		/*Variable x3 = new Variable("x", 3);
 		Variable y2 = new Variable("y", 2.5);
 		Variable z0 = new Variable("z", 0);
 		Variable yeeet = new Variable("Yeeet", 1);
 		System.out.println(x3);
 		System.out.println(y2);
 		System.out.println(z0);
-		System.out.println(yeeet);
+		System.out.println(yeeet);*/
+		
+		//Exercise 7C a) Answer: 96096
+		Binomial a = new Binomial(1.0, "x", 1.0, 2.0, "x", -2.0, 15);
+		System.out.println("Expanding: " + a);
+		System.out.println(BinomialExpander.expand(a));
+		
+		//Exercise 7C b) Answer: 122472x^6
+		Binomial b = new Binomial(1.0, "x", 1.0, 3.0, "x", -2.0, 9);
+		System.out.println("Expanding: " + b);
+		System.out.println(BinomialExpander.expand(b));
 	}
 }

@@ -58,8 +58,35 @@ public class BinomialExpander {
 		return expansion;
 	}
 	
+	/*
+	 * Calculates binomial with no variables
+	 */
 	public static double getSimpleCalculation(double a, double b, int n) {
 		return Math.pow((a+b), n);
+	}
+	
+	public static String expand(Binomial binomial) {
+		double[] coefficients = getCoefficients(binomial.getA(), binomial.getB(), binomial.getN());
+		String expansion = "";
+		for(int i=0; i<coefficients.length; i++) {
+			if(coefficients[i]>0 && i>0) {
+				expansion += "+";
+			}
+			if(coefficients[i]!=1) {
+				expansion += coefficients[i];
+			}
+			if(i==0) {
+				expansion += binomial.getVar1().getName() + "^" + (binomial.getVar1().getPower()*(binomial.getN()-i));
+			} else if(i==coefficients.length-1) {
+				expansion += binomial.getVar2().getName() + "^" + (binomial.getVar2().getPower()*i);
+			} else {
+				expansion += binomial.getVar1().getName() + "^" + (binomial.getVar1().getPower()*(binomial.getN()-i));
+				expansion += binomial.getVar2().getName() + "^" + (binomial.getVar2().getPower()*i);
+			}
+		}
+		expansion = Formatter.superscript(expansion); //Some superscript just don't display right in the console
+		expansion = Formatter.removePointZero(expansion);
+		return expansion;
 	}
 	
 }

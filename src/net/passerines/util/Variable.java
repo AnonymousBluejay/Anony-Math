@@ -21,11 +21,22 @@ public class Variable {
 		this.pow = pow;
 	}
 	
-	public void setChar(String var) {
+	public void setName(String var) {
 		this.var = var;
 	}
 	public void setPower(double pow) {
 		this.pow = pow;
+	}
+	
+	public String getName() {
+		return var;
+	}
+	public double getPower() {
+		return pow;
+	}
+	
+	public void pow(int n) {
+		pow *= n;
 	}
 	
 	@Override

@@ -3,7 +3,7 @@ package net.passerines.util;
 public class Formatter {
 
 	public static String superscript(String str) {
-		//TODO: Handle ^10 and other multiple digits, using scanner
+		//TODO: Some superscript show up as "?"
 	    //str = str.replaceAll("\\^0", "⁰");
 	    //str = str.replaceAll("\\^1", ""); //Heres the 1 should I ever need it: ¹
 	    //str = str.replaceAll("\\^2", "²");
