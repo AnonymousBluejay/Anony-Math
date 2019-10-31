@@ -1,6 +1,5 @@
 
 import net.passerines.math.*;
-import net.passerines.util.*;
 
 public class MathTester {
 	
@@ -29,7 +28,7 @@ public class MathTester {
 		System.out.println("Expanding: " + a);
 		System.out.println(BinomialExpander.expand(a));
 		
-		//Exercise 7C b) Answer: 122472x^6
+		//Exercise 7C b) Answer: -2268
 		Binomial b = new Binomial(1.0, "x", 1.0, 3.0, "x", -2.0, 9);
 		System.out.println("Expanding: " + b);
 		System.out.println(BinomialExpander.expand(b));

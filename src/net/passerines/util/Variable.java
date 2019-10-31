@@ -35,10 +35,6 @@ public class Variable {
 		return pow;
 	}
 	
-	public void pow(int n) {
-		pow *= n;
-	}
-	
 	@Override
 	public String toString() {
 		if(pow>1 || pow<0) {
