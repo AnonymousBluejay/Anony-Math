@@ -1,7 +1,6 @@
-import java.util.Random;
 
-import net.passerines.gui.SimpleInterface;
 import net.passerines.math.*;
+import net.passerines.util.*;
 
 public class MathTester {
 	
@@ -12,15 +11,17 @@ public class MathTester {
 		for(int i=0; i<coefficients.length; i++) {
 			System.out.print(coefficients[i] + " ");
 		}*/
-		for(int i=1; i<20; i++) {
+		/*for(int i=1; i<20; i++) {
 			System.out.println("(x+y)^" + i + " is " + BinomialExpander.getSimpleExpansion(1, 1, i));
-		}
-		System.out.println();
-		System.out.println("A few random problems");
-		System.out.println(BinomialExpander.getSimpleExpansion(1, 9, 2));
-		System.out.println(BinomialExpander.getSimpleExpansion(2, 3, 9));
-		System.out.println(BinomialExpander.getSimpleExpansion(5, 3, 4));
-		System.out.println(BinomialExpander.getSimpleExpansion(5, 7, 5));
-		System.out.println(BinomialExpander.getSimpleExpansion(6, 2, 8));
+		}*/
+		
+		Variable x3 = new Variable("x", 3);
+		Variable y2 = new Variable("y", 2.5);
+		Variable z0 = new Variable("z", 0);
+		Variable yeeet = new Variable("Yeeet", 1);
+		System.out.println(x3);
+		System.out.println(y2);
+		System.out.println(z0);
+		System.out.println(yeeet);
 	}
 }
