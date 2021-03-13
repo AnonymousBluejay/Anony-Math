@@ -1,5 +1,6 @@
 
 import net.passerines.math.*;
+import net.passerines.tests.FeedCalculator;
 
 public class MathTester {
 	
@@ -25,13 +26,19 @@ public class MathTester {
 		
 		//Find the constant terms
 		//Exercise 7C a) Answer: 96096
-		Binomial a = new Binomial(1.0, "x", 1.0, 2.0, "x", -2.0, 15);
+		/*Binomial a = new Binomial(1.0, "x", 1.0, 2.0, "x", -2.0, 15);
 		System.out.println("Expanding: " + a);
 		System.out.println(BinomialExpander.expand(a));
 		
 		//Exercise 7C b) Answer: -2268
 		Binomial b = new Binomial(1.0, "x", 1.0, -3.0, "x", -2.0, 9);
 		System.out.println("Expanding: " + b);
-		System.out.println(BinomialExpander.expand(b));
+		System.out.println(BinomialExpander.expand(b));*/
+		
+		/*Binomial c = new Binomial(3.0, "x", 1, -3.0, "", 1, 3);
+		System.out.println("Expanding: " + c);
+		System.out.println(BinomialExpander.expand(c));*/
+		
+		new FeedCalculator();
 	}
 }

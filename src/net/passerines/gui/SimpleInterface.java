@@ -5,7 +5,7 @@ import javax.swing.*;
 public class SimpleInterface {
 
 	public SimpleInterface() {
-		JFrame frame = new JFrame("Simple Binomial Expander");
+	   JFrame frame = new JFrame("Simple Binomial Expander");
        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
        frame.setSize(600,600);
        
