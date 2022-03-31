@@ -1,0 +1,11 @@
+net\passerines\math\Permutation.class
+MathTester.class
+net\passerines\math\Factorial.class
+net\passerines\util\Variable.class
+net\passerines\tests\FeedCalculator.class
+net\passerines\tests\SpringRolls.class
+net\passerines\gui\SimpleInterface.class
+net\passerines\util\Formatter.class
+net\passerines\math\Combination.class
+net\passerines\math\Binomial.class
+net\passerines\math\BinomialExpander.class
